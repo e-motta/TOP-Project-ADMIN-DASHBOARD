@@ -164,5 +164,66 @@
     grid-template-columns: 1fr 400px;
     background-color: #e2e8f0;
     box-shadow: inset 0px 5px 5px rgb(209, 209, 209);
+    padding: 45px 25px;
+    gap: 25px;
+}
 
+.content-left {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 15px;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.title-small {
+    font-size: 18px;
+}
+
+.cards {
+    display: grid;
+    gap: 40px 30px;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+}
+
+.card-wrapper {
+    display: grid;
+    grid-template-columns: 10px 1fr;
+    height: 280px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 5px 5px rgb(209, 209, 209);
+
+}
+
+.left-bar {
+    background-color: #f0b429;
+    border-radius: 15px 0 0 15px
+}
+
+.card-content {
+    padding: 48px 32px 36px 32px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 6px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.card-description {
+    font-size: 1.4em;
+    color: grey;
+}
+
+.card-icons {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    place-content: end;
+    gap: 36px;
 }
