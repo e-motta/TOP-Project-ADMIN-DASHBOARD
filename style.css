@@ -11,6 +11,7 @@
 
 .icon {
     fill: #ffffff;
+    font-size: 32px !important;
 }
 
 .sidebar {
@@ -31,7 +32,7 @@
 }
 
 .logo-wrapper .title {
-    font-size: 32px;
+    font-size: 36px;
 }
 
 .menu {
@@ -55,15 +56,113 @@
 
 .main-right {
     display: grid;
-    grid-template-rows: 200px 1fr;
+    grid-template-rows: 240px 1fr;
 }
 
 .header {
     background-color: #ffffff;
+    display: grid;
+    grid-template-rows: 100px 140px;
+    padding: 0 60px;
+}
+
+.header-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 120px;
+}
+
+.search-wrapper {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    align-items: center;
+    gap: 18px;
+}
+
+.icon-dark {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.search-box {
+    border: 0 solid #e2e8f0;
+    border-radius: 25px;
+    background-color: #e2e8f0;
+    height: 40px;
+}
+
+.userinfo-wrapper {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    place-items: center;
+    place-content: center;
+    gap: 36px
+}
+
+.username-right {
+    font-size: 1.5em;
+    font-weight: 700;
+    justify-self: start;
+}
+
+.header-btm {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    place-content: center;
+}
+
+.usergreeting-wrapper {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.usergreeting-wrapper .avatar {
+    grid-row: 1 / 3;
+}
+
+.greeting {
+    font-size: 18px;
+    font-weight: 700;
+    align-self: end;
+}
+
+.username-center {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.action-btns {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    place-content: center;
+}
+
+.action-btn {
+    background-color: #1992d4;
+    border: 0 solid white;
+    color: white;
+    height: 54px;
+    width: 140px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 90px;
+}
+
+.small-avatar {
+    width: 64px;
 }
 
 .content-wrapper {
     display: grid;
     grid-template-columns: 1fr 400px;
     background-color: #e2e8f0;
+    box-shadow: inset 0px 5px 5px rgb(209, 209, 209);
+
 }
