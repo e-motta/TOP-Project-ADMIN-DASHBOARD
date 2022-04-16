@@ -84,10 +84,22 @@
 }
 
 .search-box {
-    border: 0 solid #e2e8f0;
     border-radius: 25px;
     background-color: #e2e8f0;
     height: 40px;
+    display: inline;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.search-box input {
+    border: 0 solid #e2e8f0;
+    background-color: #e2e8f0;
+    flex: 1 0 auto;
+    outline: none;
+    font-size: 18px;
+    color: rgb(66, 66, 66)
 }
 
 .userinfo-wrapper {
@@ -219,6 +231,7 @@
 .card-description {
     font-size: 1.4em;
     color: grey;
+    line-height: 110%;
 }
 
 .card-icons {
@@ -226,4 +239,65 @@
     grid-template-columns: auto auto auto;
     place-content: end;
     gap: 36px;
+}
+
+.announcements {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 15px;
+}
+
+.card-wrapper-right {
+    height: auto;
+    /* grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto); */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 48px 48px 36px 48px;
+}
+
+.line {
+    background-color: rgb(182, 182, 182);
+    height: 1px;
+}
+
+.description-small {
+    font-size: 1em;
+}
+
+.announcement-item {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 10px;
+}
+
+.trending {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 15px;
+    padding-top: 50px;
+}
+
+.trending-items {
+    gap: 27px
+}
+
+.trending-item {
+    display: grid;
+    grid-template: auto auto / auto 1fr;
+    gap: 5px 20px;
+}
+
+.trending-item .avatar {
+    grid-row: 1 / -1;
+}
+
+.trending-username {
+    font-size: 1.2em;
+    align-self: end;
+}
+
+.description-trending {
+    font-size: 1.2em;
 }
